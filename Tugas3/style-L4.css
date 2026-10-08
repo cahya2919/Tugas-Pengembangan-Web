@@ -1,0 +1,168 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+        body {
+            background-color: #f9f6ee; /* warna latar web */
+            color: #2d3748;
+            line-height: 1.6;
+        }
+
+/* untuk bagian header dan navigasi menu */
+        header {
+            background-color: #62c2df; /* bagian atas menjadi biru soft */
+            color: white;
+            padding: 20px 50px; 
+            text-align: center;
+            border-bottom: 5px solid #fadb6e; /* untuk membuat garis kuning soft di bawah, materi borders*/
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+/* untuk mengatur menu navigasi di atas */
+        .nav-menu a { 
+            color: white;
+            text-decoration: none;
+            background-color: #52b0cd;
+            padding: 8px 16px;
+            margin: 0 5px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+/* untuk membuat efek ketika di klik maka akan berubah warna */
+        .nav-menu a:hover { 
+            background-color: #fadb6e;
+            color: #2d3748;
+        }
+
+/* membuat kolom konten utama */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+/* masuk menjadi kotak perkenlana atau intro */
+        .intro-box {
+            background-color: white;
+            padding: 25px;
+            border-left: 6px solid #62c2df; /* membuat garis di samping kiri */
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .intro-box h2 {
+            color: #2b7a90;
+            margin-bottom: 10px;
+        }
+
+        .intro-box p {
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            color: #2b7a90;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #62c2df; /* memberikan garis di bawah tulisan */
+            display: inline-block;
+        }
+/* untuk kolom setiap drama*/
+        .drama-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+/* untuk membuat kolom atau kartu drama */
+        .drama-card {
+            background-color: white;
+            width: 31%; /* untuk menampilkan 3 kartu per baris di layar besar */
+            min-width: 250px;
+            padding: 15px;
+            border: 2px solid #fadb6e;
+            border-radius: 10px;
+            flex-grow: 1; /* Agar kartu menyesuaikan ruang */
+        }
+/* untuk membuat kolom atau kartu drama ketika di klik berubah warna */
+        .drama-card:hover {
+            border-color: #62c2df;
+        }
+/* untuk memassukan gambar poster & link lebih rapih*/
+        .poster-wrapper {
+            width: 100%;
+            height: 320px;
+            margin-bottom: 12px;
+        }
+
+        .poster-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* membuat foto rapi & tidak gepeng */
+            border-radius: 6px;
+        }
+
+/* penanda untuk drama yg bagus */
+        .badge {
+            background-color: #fadb6e;
+            color: #5a4b00;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .drama-card h3 {
+            color: #2b7a90;
+            margin-bottom: 8px;
+        }
+/* untuk menjadi templet agar bagian genre sama semua */
+        .genre {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 8px;
+        }
+/* untuk menjadi templet agar bagian sinopsis sama semua */
+        .synopsis {
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+/* untuk membuat footer */
+        footer {
+            background-color: #62c2df;
+            color: white;
+            border-top: 4px solid #fadb6e;
+            margin-top: 40px;
+            padding: 25px 5%;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+        .footer-left, .footer-right {
+            width: 48%;
+        }
+
+        .footer-right {
+            text-align: right;
+        }
